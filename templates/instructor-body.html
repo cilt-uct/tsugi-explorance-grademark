@@ -1,0 +1,70 @@
+<section>
+    <div class="d2l-max-width">
+        <div class="d2l-page-main-padding">
+            <!-- Header -->
+            <div style="position: relative;">
+
+                <h1 class="page-title">
+                    Explorance
+                </h1>
+
+            </div>
+
+            {% if ($context_id == '1') { %}
+            <div class="alert alert-warning" style="font-size: 0.8rem;">
+                <i class="fas fa-exclamation-circle"></i>&nbsp;&nbsp;
+                This is a test site and will use dummy variables as an example.
+            </div>
+            {% } %}
+
+            <!-- Description -->
+            <div class="group-description">
+                <p>Create a Category and Grade item in Amathuba that's linked to the completion of an Explorance Evaluation.                 <!-- Icon Button -->
+                    <button type="button" class="btn d2l-btn d2l-btn-icon" data-toggle="modal" data-target="#infoModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false">
+                            <path d="M9 0a9 9 0 1 0 9 9 9 9 0 0 0-9-9zm0 16a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm1-4.1v.1a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1 3 3 0 1 0-3-3 1 1 0 0 1-2 0 5 5 0 1 1 6 4.9z"></path>
+                        </svg>
+                    </button>
+                </p>
+            </div>
+
+            <div class="d2l-button-container">
+                <!-- Primary Button -->
+                <button type="button" class="btn d2l-btn d2l-btn-primary">Create the Grade item</button>
+
+
+            </div>
+
+            <!-- Bootstrap 3 Modal Structure -->
+            <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="infoModalLabel">Category and Grade item</h4>
+                            <button type="button" class="btn d2l-btn d2l-btn-icon d2l-btn-small" data-dismiss="modal" aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <path d="M14.708 13.29a1.008 1.008 0 0 1 0 1.42 1.014 1.014 0 0 1-1.42 0L9 10.42l-4.288 4.29a1.014 1.014 0 0 1-1.42 0 1.008 1.008 0 0 1 0-1.42L7.58 9 3.292 4.712a1.004 1.004 0 0 1 1.42-1.42L9 7.582l4.288-4.29a1.004 1.004 0 0 1 1.42 1.42L10.418 9z"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>The category and grade item will be created in Amathuba and will be accessible under <a href="https://{{ $d2l_url }}/d2l/lms/grades/index.d2l?ou={{ $site_id }}">Grades</a>.</p>
+                            <p>This tool ensures that the grade item is properly linked to the Explorance Evaluation and will reflect the results when the evaluations are completed.</p>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn d2l-btn d2l-btn-primary" data-dismiss="modal">OK</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,1461 @@
+:root {
+  font-size: 20px;
+}
+
+html {
+  --d2l-cursor-resize-inline-end: e-resize;
+  --d2l-cursor-resize-inline-start: w-resize;
+  --d2l-document-direction: ltr;
+  --d2l-inline-end: right;
+  --d2l-inline-start: left;
+  --d2l-length-factor: 1;
+  --d2l-mirror-transform: none;
+}
+
+html {
+  --d2l-color-regolith: #f9fbff;
+  --d2l-color-sylvite: #f1f5fb;
+  --d2l-color-gypsum: #e3e9f1;
+  --d2l-color-mica: #cdd5dc;
+  --d2l-color-corundum: #b1b9be;
+  --d2l-color-chromite: #90989d;
+  --d2l-color-galena: #6e7477;
+  --d2l-color-tungsten: #494c4e;
+  --d2l-color-ferrite: #202122;
+  --d2l-color-zircon-plus-2: #e0feff;
+  --d2l-color-zircon-plus-1: #00d2ed;
+  --d2l-color-zircon: #008eab;
+  --d2l-color-zircon-minus-1: #035670;
+  --d2l-color-celestine-plus-2: #e8f8ff;
+  --d2l-color-celestine-plus-1: #29a6ff;
+  --d2l-color-celestine: #006fbf;
+  --d2l-color-celestine-minus-1: #004489;
+  --d2l-color-amethyst-plus-2: #f2f0ff;
+  --d2l-color-amethyst-plus-1: #8982ff;
+  --d2l-color-amethyst: #6038ff;
+  --d2l-color-amethyst-minus-1: #4500db;
+  --d2l-color-fluorite-plus-2: #f9ebff;
+  --d2l-color-fluorite-plus-1: #ce68fa;
+  --d2l-color-fluorite: #9d1fd4;
+  --d2l-color-fluorite-minus-1: #6900a0;
+  --d2l-color-tourmaline-plus-2: #ffebf6;
+  --d2l-color-tourmaline-plus-1: #fd4e9d;
+  --d2l-color-tourmaline: #d40067;
+  --d2l-color-tourmaline-minus-1: #990056;
+  --d2l-color-cinnabar-plus-2: #ffede8;
+  --d2l-color-cinnabar-plus-1: #ff575a;
+  --d2l-color-cinnabar: #cd2026;
+  --d2l-color-cinnabar-minus-1: #990006;
+  --d2l-color-carnelian-plus-1: #fff3e0;
+  --d2l-color-carnelian: #e87511;
+  --d2l-color-carnelian-minus-1: #ba4700;
+  --d2l-color-carnelian-minus-2: #7d2600;
+  --d2l-color-citrine-plus-1: #fff9d6;
+  --d2l-color-citrine: #ffba59;
+  --d2l-color-citrine-minus-1: #c47400;
+  --d2l-color-citrine-minus-2: #7a4300;
+  --d2l-color-peridot-plus-1: #efffd9;
+  --d2l-color-peridot: #8ad934;
+  --d2l-color-peridot-minus-1: #4a8f00;
+  --d2l-color-peridot-minus-2: #2f5e00;
+  --d2l-color-olivine-plus-1: #e7ffe3;
+  --d2l-color-olivine: #46a661;
+  --d2l-color-olivine-minus-1: #027a21;
+  --d2l-color-olivine-minus-2: #005614;
+  --d2l-color-malachite-plus-1: #e3fff5;
+  --d2l-color-malachite: #2de2c0;
+  --d2l-color-malachite-minus-1: #00a490;
+  --d2l-color-malachite-minus-2: #00635e;
+  --d2l-color-primary-accent-action: var(--d2l-color-celestine);
+  --d2l-color-primary-accent-indicator: var(--d2l-color-carnelian);
+  --d2l-theme-background-color-base: #ffffff;
+  --d2l-theme-background-color-elevated: var(--d2l-theme-background-color-base);
+  --d2l-theme-background-color-floating: var(--d2l-theme-background-color-base);
+  --d2l-theme-background-color-interactive-faint-default: var(--d2l-color-regolith);
+  --d2l-theme-background-color-interactive-faint-hover: var(--d2l-color-sylvite);
+  --d2l-theme-background-color-interactive-highlighted: var(--d2l-theme-brand-color-highlight);
+  --d2l-theme-background-color-interactive-primary-default: var(--d2l-theme-brand-color-primary-default);
+  --d2l-theme-background-color-interactive-primary-hover: var(--d2l-theme-brand-color-primary-hover);
+  --d2l-theme-background-color-interactive-secondary-default: var(--d2l-color-gypsum);
+  --d2l-theme-background-color-interactive-secondary-hover: var(--d2l-color-mica);
+  --d2l-theme-background-color-interactive-tertiary-default: transparent;
+  --d2l-theme-background-color-interactive-tertiary-hover: var(--d2l-theme-background-color-interactive-secondary-default);
+  --d2l-theme-background-color-interactive-translucent-default: #00000080;
+  --d2l-theme-background-color-interactive-translucent-hover: var(--d2l-theme-brand-color-primary-default);
+  --d2l-theme-background-color-sunken: #f6f7f8;
+  --d2l-theme-border-color-emphasized: var(--d2l-color-galena);
+  --d2l-theme-border-color-focus: var(--d2l-color-celestine);
+  --d2l-theme-border-color-standard: var(--d2l-color-mica);
+  --d2l-theme-border-color-subtle: var(--d2l-color-gypsum);
+  --d2l-theme-brand-color-highlight: var(--d2l-color-celestine-plus-2);
+  --d2l-theme-brand-color-primary-default: var(--d2l-color-celestine);
+  --d2l-theme-brand-color-primary-hover: var(--d2l-color-celestine-minus-1);
+  --d2l-theme-icon-color-faint: var(--d2l-theme-border-color-standard);
+  --d2l-theme-icon-color-inverted: #ffffff;
+  --d2l-theme-icon-color-standard: var(--d2l-color-tungsten);
+  --d2l-theme-shadow-attached-color: #00000008;
+  --d2l-theme-shadow-floating-color: rgba(0, 0, 0, 0.15);
+  --d2l-theme-status-color-default: var(--d2l-color-celestine);
+  --d2l-theme-status-color-error: var(--d2l-color-cinnabar);
+  --d2l-theme-status-color-success-text: var(--d2l-color-olivine-minus-1);
+  --d2l-theme-status-color-success: var(--d2l-color-olivine);
+  --d2l-theme-status-color-warning-text: var(--d2l-color-carnelian-minus-1);
+  --d2l-theme-status-color-warning: var(--d2l-color-carnelian);
+  --d2l-theme-text-color-interactive-default: var(--d2l-theme-brand-color-primary-default);
+  --d2l-theme-text-color-interactive-hover: var(--d2l-theme-brand-color-primary-hover);
+  --d2l-theme-text-color-static-faint: var(--d2l-color-galena);
+  --d2l-theme-text-color-static-inverted: #ffffff;
+  --d2l-theme-text-color-static-standard: var(--d2l-color-ferrite);
+  --d2l-theme-text-color-static-subtle: var(--d2l-color-tungsten);
+  --d2l-theme-backdrop-background-color: var(--d2l-color-regolith);
+  --d2l-theme-backdrop-opacity: 0.7;
+  --d2l-theme-backdrop-dialog-color: #ffffff;
+  --d2l-theme-background-color-interactive-faint-disabled: #f9fbff80;
+  --d2l-theme-badge-background-color: var(--d2l-color-gypsum);
+  --d2l-theme-badge-text-color: var(--d2l-theme-text-color-static-standard);
+  --d2l-theme-border-color-disabled: var(--d2l-color-corundum);
+  --d2l-theme-notification-background-color: var(--d2l-color-carnelian-minus-1);
+  --d2l-theme-notification-text-color: #ffffff;
+  --d2l-theme-icon-color-active: var(--d2l-color-celestine);
+  --d2l-theme-text-color-static-disabled: #20212280;
+  --d2l-theme-opacity-disabled-control: 0.5;
+  --d2l-theme-opacity-disabled-link: 0.74;
+  --d2l-theme-opacity-disabled-linkicon: 0.64;
+  --d2l-theme-shadow-attached: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+  --d2l-theme-shadow-attached-block-start: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+  --d2l-theme-shadow-attached-block-end: 0 -2px 4px 0 rgba(0, 0, 0, 0.03);
+  --d2l-theme-shadow-floating-offset-x: 0;
+  --d2l-theme-shadow-floating-offset-y: 2px;
+  --d2l-theme-shadow-floating-blur-radius: 12px;
+  --d2l-theme-shadow-floating-spread-radius: 0;
+  --d2l-theme-shadow-floating: var(--d2l-theme-shadow-floating-offset-x) var(--d2l-theme-shadow-floating-offset-y) var(--d2l-theme-shadow-floating-blur-radius) var(--d2l-theme-shadow-floating-spread-radius) var(--d2l-theme-shadow-floating-color);
+  --d2l-theme-shadow-inset-offset-x: 0;
+  --d2l-theme-shadow-inset-offset-y: 2px;
+  --d2l-theme-shadow-inset-blur-radius: 0;
+  --d2l-theme-shadow-inset-spread-radius: 0;
+  --d2l-theme-shadow-inset-color: rgba(177, 185, 190, 0.2);
+  --d2l-theme-shadow-inset: inset var(--d2l-theme-shadow-inset-offset-x) var(--d2l-theme-shadow-inset-offset-y) var(--d2l-theme-shadow-inset-blur-radius) var(--d2l-theme-shadow-inset-spread-radius) var(--d2l-theme-shadow-inset-color);
+  --d2l-color-feedback-error: var(--d2l-theme-status-color-error);
+  --d2l-color-feedback-warning: var(--d2l-theme-status-color-warning);
+  --d2l-color-feedback-success: var(--d2l-theme-status-color-success);
+  --d2l-color-feedback-action: var(--d2l-theme-status-color-default);
+  --d2l-input-label-required-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgNSA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJCTxwYXRoIGQ9Ik0yLjM4IDUuMTQxVjMuODZjMC0uMDkzLjAwNi0uMTg0LjAxOC0uMjczLjAxMS0uMDg5LjAzMS0uMTczLjA1OS0uMjUyYS45MjcuOTI3IDAgMCAxLS4xODIuMTc1Yy0uMDcuMDUxLS4xNDUuMTAzLS4yMjQuMTU0bC0xLjEwNi42NDQtLjQxMy0uNyAxLjExMy0uNjQ0Yy4wODQtLjA1MS4xNjctLjA5My4yNDgtLjEyNi4wODItLjAzMy4xNjctLjA1Ni4yNTYtLjA3YS44MTYuODE2IDAgMCAxLS4yNTYtLjA3IDIuMzU2IDIuMzU2IDAgMCAxLS4yNDgtLjEzM0wuNTMyIDEuOTE0bC40MDYtLjcgMS4xMTMuNjU4Yy4wOC4wNTEuMTU1LjEwNC4yMjguMTU3YS45NjYuOTY2IDAgMCAxIC4xODUuMTc5IDEuMDAyIDEuMDAyIDAgMCAxLS4wNjYtLjI1MiAyLjA5MSAyLjA5MSAwIDAgMS0uMDE4LS4yNzNWLjM4OGguODI2djEuMjgxYzAgLjA5OC0uMDA2LjE5Mi0uMDE3LjI4M2ExLjAwMyAxLjAwMyAwIDAgMS0uMDY3LjI1NmMuMDUxLS4wNjUuMTEyLS4xMjUuMTgyLS4xNzkuMDctLjA1My4xNDctLjEwNi4yMzEtLjE1N2wxLjEwNi0uNjQ0LjQxMy43LTEuMTEzLjYzN2ExLjk1NCAxLjk1NCAwIDAgMS0uMjQ4LjEzIDEuMDcgMS4wNyAwIDAgMS0uMjU2LjA3M2MuMTU5LjAyOC4zMjcuMDkzLjUwNC4xOTZsMS4xMTMuNjUxLS40MDYuNy0xLjExMy0uNjUxYTMuMzA3IDMuMzA3IDAgMCAxLS4yMzEtLjE1NCAxLjEyMiAxLjEyMiAwIDAgMS0uMTg5LS4xNzVjLjA2LjE1LjA5MS4zMjIuMDkxLjUxOHYxLjI4OEgyLjM4eiIgZmlsbD0iIzQ5NGM0ZSIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cgk8L3N2Zz4=);
+  --d2l-input-checkbox-check-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KCQk8cGF0aCBmaWxsPSIjNDk0YzRlIiBkPSJNOC40IDE2LjZjLjYuNiAxLjUuNiAyLjEgMGw4LThjLjYtLjYuNi0xLjUgMC0yLjEtLjYtLjYtMS41LS42LTIuMSAwbC02LjkgNy0xLjktMS45Yy0uNi0uNi0xLjUtLjYtMi4xIDAtLjYuNi0uNiAxLjUgMCAyLjFsMi45IDIuOXoiLz4JPC9zdmc+);
+  --d2l-input-checkbox-indeterminate-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KCQk8cGF0aCBmaWxsPSIjNDk0YzRlIiBkPSJNNy41LDExaDljMC44LDAsMS41LDAuNywxLjUsMS41bDAsMGMwLDAuOC0wLjcsMS41LTEuNSwxLjVoLTlDNi43LDE0LDYsMTMuMyw2LDEyLjVsMCwwQzYsMTEuNyw2LjcsMTEsNy41LDExeiIvPgoJPC9zdmc+);
+  --d2l-input-invalid-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE4IDE4Ij4KCQk8cGF0aCBmaWxsPSIjY2QyMDI2IiBkPSJNMTcuNzkgMTUuMTFsLTctMTRhMiAyIDAgMCAwLTMuNTggMGwtNyAxNGExLjk3NSAxLjk3NSAwIDAgMCAuMDkgMS45NEEyIDIgMCAwIDAgMiAxOGgxNGExLjk5NCAxLjk5NCAwIDAgMCAxLjctLjk1IDEuOTY3IDEuOTY3IDAgMCAwIC4wOS0xLjk0ek05IDE2YTEuNSAxLjUgMCAxIDEgMS41LTEuNUExLjUgMS41IDAgMCAxIDkgMTZ6bS45OC00LjgwNmExIDEgMCAwIDEtMS45NiAwbC0uOTktNUExIDEgMCAwIDEgOC4wMSA1aDEuOTgzYTEgMSAwIDAgMSAuOTggMS4xOTR6Ii8+CgkJPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTkgMTZhMS41IDEuNSAwIDEgMSAxLjUtMS41QTEuNSAxLjUgMCAwIDEgOSAxNnptLjk4LTQuODA2YTEgMSAwIDAgMS0xLjk2IDBsLS45OS01QTEgMSAwIDAgMSA4LjAxIDVoMS45ODNhMSAxIDAgMCAxIC45OCAxLjE5NHoiLz4KCTwvc3ZnPg==);
+  --d2l-input-select-chevron-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDExIDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgkJPHBhdGggZD0iTTEgMmw0LjUgNE0xMCAyTDUuNSA2IiBzdHJva2U9IiM0OTRjNGUiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCTwvc3ZnPg==);
+  --d2l-input-radio-check-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCQk8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0iIzQ5NGM0ZSI+PC9jaXJjbGU+Cgk8L3N2Zz4=);
+  --d2l-button-icon-background-color-default: var(--d2l-theme-background-color-interactive-tertiary-default);
+  --d2l-button-icon-background-color-hover-default: var(--d2l-theme-background-color-interactive-tertiary-hover);
+  --d2l-button-icon-border-radius-default: 0.3rem;
+  --d2l-button-icon-min-height-default: calc(2rem + 2px);
+  --d2l-button-icon-min-width-default: calc(2rem + 2px);
+  --d2l-button-icon-h-align: calc(((2rem + 2px - 0.9rem) / 2) * -1);
+  --d2l-popover-default-animation-name: d2l-popover-animation;
+  --d2l-popover-default-background-color: var(--d2l-theme-background-color-base);
+  --d2l-popover-default-border-color: var(--d2l-theme-border-color-standard);
+  --d2l-popover-default-border-radius: 0.3rem;
+  --d2l-popover-default-foreground-color: var(--d2l-theme-text-color-static-standard);
+  --d2l-popover-default-shadow-color: var(--d2l-theme-shadow-floating-color);
+}
+
+html {
+  background-color: var(--d2l-theme-background-color-base);
+  font-size: 20px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #202020;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bgnew {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.splash-content header {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.925em;
+  margin-bottom: 3%;
+  text-shadow: 2px 3px 0px #898999;
+}
+
+section {
+  padding-bottom: 30px;
+}
+section > div.row, section > form > div.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+section {
+  /*
+  * Main D2L-style page container
+  */
+}
+section .d2l-max-width {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 15px 40px;
+}
+section .d2l-page-main-padding {
+  padding: 10px 30px;
+}
+section {
+  /*
+  * Page title
+  */
+}
+section .page-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #111;
+}
+section {
+  /*
+  * Top-right links
+  */
+}
+section .page-actions {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+section .page-actions a {
+  margin-left: 28px;
+  color: #006fbf;
+  text-decoration: none;
+  font-size: 16px;
+}
+section .page-actions a:hover,
+section .page-actions a:focus {
+  text-decoration: underline;
+}
+section .page-actions i {
+  margin-right: 5px;
+}
+section {
+  /*
+      * Top button row
+      */
+}
+section .toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+section .toolbar .btn {
+  height: 38px;
+  min-width: 120px;
+  padding: 8px 22px;
+  border-radius: 6px;
+  border: 0;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+section .btn-primary-d2l {
+  background: #0875c1;
+  color: #fff;
+}
+section .btn-primary-d2l:hover,
+section .btn-primary-d2l:focus {
+  background: #075f9d;
+  color: #fff;
+}
+section .btn-secondary-d2l {
+  background: #e4eaf1;
+  color: #111;
+}
+section .btn-secondary-d2l:hover,
+section .btn-secondary-d2l:focus {
+  background: #d5dee9;
+  color: #111;
+}
+section {
+  /*
+      * Category selector
+      */
+}
+section .category-selector {
+  margin-bottom: 30px;
+}
+section .category-selector label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+}
+section .category-select {
+  width: 202px;
+  height: 39px;
+  padding: 7px 35px 7px 13px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #222;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  /*
+      * Keep the native select appearance.
+      */
+  -moz-appearance: auto;
+       appearance: auto;
+  -webkit-appearance: auto;
+}
+section {
+  /*
+      * Category heading
+      */
+}
+section .category-heading {
+  margin: 0 0 34px;
+  font-size: 19px;
+  font-weight: 400;
+  color: #006fbf;
+}
+section .category-heading a {
+  color: #006fbf;
+  text-decoration: none;
+}
+section .category-heading a:hover,
+section .category-heading a:focus {
+  text-decoration: underline;
+}
+section .category-heading .category-count {
+  margin-left: 2px;
+}
+section .category-heading .fa-chevron-down {
+  margin-left: 7px;
+  font-size: 13px;
+  color: #333;
+}
+section {
+  /*
+      * Description
+      */
+}
+section .group-description {
+  margin-bottom: 37px;
+  font-size: 0.76rem;
+  color: var(--d2l-color-tungsten);
+}
+section .group-description a {
+  font-weight: bold;
+}
+section .group-description a:hover, section .group-description a:active {
+  text-decoration: underline;
+}
+section {
+  /*
+      * Bulk actions
+      */
+}
+section .bulk-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 21px;
+}
+section .bulk-actions a {
+  color: #006fbf;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+section .bulk-actions a:hover,
+section .bulk-actions a:focus {
+  text-decoration: underline;
+}
+section .bulk-actions i {
+  margin-right: 5px;
+  font-size: 15px;
+}
+section {
+  /*
+      * Groups table
+      */
+}
+section .groups-table-wrapper {
+  width: 100%;
+  border: 1px solid #c8d2dc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+section .groups-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 14px;
+}
+section .groups-table thead th {
+  height: 47px;
+  padding: 12px;
+  background: #f7f9fb;
+  border-right: 1px solid #c8d2dc;
+  border-bottom: 1px solid #c8d2dc;
+  color: #111;
+  font-weight: 400;
+  vertical-align: middle;
+  text-align: center;
+}
+section .groups-table thead th:first-child {
+  width: 47px;
+  padding: 0;
+}
+section .groups-table thead th:nth-child(2) {
+  width: 175px;
+  text-align: left;
+}
+section .groups-table thead th:nth-child(3) {
+  width: 285px;
+}
+section .groups-table thead th:nth-child(4) {
+  width: 330px;
+}
+section .groups-table thead th:last-child {
+  border-right: 0;
+}
+section .groups-table tbody td {
+  height: 76px;
+  padding: 12px;
+  border-right: 1px solid #c8d2dc;
+  border-bottom: 1px solid #c8d2dc;
+  vertical-align: middle;
+}
+section .groups-table tbody td:last-child {
+  border-right: 0;
+}
+section .groups-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+section .groups-table .checkbox-cell {
+  width: 47px;
+  text-align: center;
+  padding: 0;
+}
+section {
+  /*
+      * Bootstrap's checkbox styling isn't used here because
+      * the screenshot uses the larger D2L-style checkbox.
+      */
+}
+section .d2l-checkbox {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background: #fff;
+  vertical-align: middle;
+}
+section .group-name a {
+  color: #006fbf;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+section .group-name a:hover,
+section .group-name a:focus {
+  text-decoration: underline;
+}
+section .member-count {
+  text-align: center;
+  color: #111;
+}
+section {
+  /*
+      * Extra content row shown in the screenshot.
+      */
+}
+section .table-extra {
+  height: 72px;
+  padding: 25px 60px !important;
+  color: #111;
+}
+section {
+  /*
+      * Pagination / page size
+      */
+}
+section .page-size {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+section .page-size select {
+  width: 148px;
+  height: 38px;
+  padding: 7px 12px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background: #fff;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+}
+section {
+  /*
+      * Responsive behaviour
+      */
+}
+@media (max-width: 768px) {
+  section .page-actions {
+    position: static;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  section .page-actions a {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  section .toolbar {
+    flex-wrap: wrap;
+  }
+  section .groups-table-wrapper {
+    overflow-x: auto;
+  }
+  section .groups-table {
+    min-width: 900px;
+  }
+}
+
+.container_iframe .bg-info {
+  background-color: rgba(117, 202, 235, 0.6);
+}
+.container_iframe .bg-info p {
+  color: #333;
+}
+
+/*// D2L //////////////////////*/
+.d2l-typography, .d2l-skeletize {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+.d2l-input-icon {
+  --d2l-icon-height: 0.8rem;
+  --d2l-icon-width: 0.8rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  color: #666;
+  font-size: 16px;
+}
+.d2l-input-icon svg {
+  height: var(--d2l-icon-height);
+  width: var(--d2l-icon-width);
+}
+
+.d2l-input-text-container {
+  flex: 1 1 auto;
+  position: var(--d2l-input-position, relative);
+}
+
+.d2l-input-inside-before, .d2l-input-inside-after {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.d2l-input-inside-before {
+  left: 0px;
+}
+
+.d2l-input-inside-after {
+  right: 0px;
+}
+
+.d2l-input {
+  background-color: var(--d2l-input-background-color, var(--d2l-theme-background-color-base));
+  border: 1px solid var(--d2l-input-border-color, var(--d2l-theme-border-color-emphasized));
+  border-radius: var(--d2l-input-border-radius, 0.3rem);
+  box-shadow: var(--d2l-theme-shadow-inset);
+  box-sizing: border-box;
+  color: var(--d2l-theme-text-color-static-standard);
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 400;
+  height: var(--d2l-input-height, auto);
+  letter-spacing: 0.02rem;
+  line-height: 1.2rem;
+  margin: 0px;
+  min-height: calc(2px + 2rem);
+  min-width: calc(1em + 2rem);
+  padding: var(--d2l-input-padding, 0.4rem 0.75rem);
+  position: var(--d2l-input-position, relative);
+  text-align: var(--d2l-input-text-align, start);
+  vertical-align: middle;
+  width: 100%;
+}
+
+.d2l-input.d2l-datepicker-input {
+  padding-left: 40px;
+}
+
+@supports selector(:focus-visible) {
+  .d2l-input-focus, .d2l-input:focus-visible:not(:disabled), .d2l-input:hover:not(:disabled) {
+    border-color: var(--d2l-theme-border-color-focus);
+    border-width: 2px;
+    outline: none;
+    padding: var(--d2l-input-padding-focus, calc(0.4rem - 1px) calc(0.75rem - 1px));
+  }
+  .d2l-input.d2l-datepicker-input:focus-visible:not(:disabled), .d2l-input.d2l-datepicker-input:hover:not(:disabled) {
+    padding-left: 39px;
+  }
+}
+.d2l-input-label {
+  cursor: default;
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 0.9rem;
+  margin-block: 0px 0.4rem;
+  margin-inline: 0px;
+  padding: 0px;
+}
+
+.d2l-input-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--d2l-theme-background-color-base);
+  background-image: var(--d2l-input-select-chevron-image);
+  background-origin: border-box;
+  background-position: center var(--d2l-inline-end, right) 17px;
+  background-repeat: no-repeat;
+  background-size: 11px 7px;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: inset var(--d2l-theme-shadow-inset-offset-x) var(--d2l-theme-shadow-inset-offset-y) var(--d2l-theme-shadow-inset-blur-radius) 1px var(--d2l-theme-shadow-inset-color);
+  color: var(--d2l-theme-text-color-static-standard);
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 400;
+  height: auto;
+  line-height: 1.2rem;
+  margin: 0;
+  max-height: calc(2rem + 2px);
+  outline: 1px solid var(--d2l-theme-border-color-emphasized);
+  outline-offset: -1px;
+  padding-block: calc(0.4rem + 1px);
+  padding-inline: calc(0.75rem + 1px) calc(2px + 0.8rem + 1px + 11px + 16px + 1px);
+  vertical-align: middle;
+}
+
+@supports selector(:focus-visible) {
+  .d2l-input-select:not([disabled]):hover, .d2l-input-select:not([disabled]):focus-visible {
+    box-shadow: inset var(--d2l-theme-shadow-inset-offset-x) var(--d2l-theme-shadow-inset-offset-y) var(--d2l-theme-shadow-inset-blur-radius) 2px var(--d2l-theme-shadow-inset-color);
+    --d2l-focus-ring-offset: -2px;
+    outline: 2px solid var(--d2l-focus-ring-color, var(--d2l-theme-border-color-focus));
+    outline-offset: var(--d2l-focus-ring-offset, 2px);
+  }
+}
+/*
+ * Custom radio button component
+ */
+/* ---------------------------------------------------------
+  Radio group
+  --------------------------------------------------------- */
+.radio-group {
+  width: 100%;
+  max-width: 850px;
+}
+
+.radio-group-title {
+  margin-bottom: 7px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--d2l-theme-text-color-static-standard);
+}
+
+/* ---------------------------------------------------------
+   Individual option
+   --------------------------------------------------------- */
+.radio-option {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 47px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.radio-option:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------
+   Radio control
+   --------------------------------------------------------- */
+.radio-control {
+  position: relative;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  margin-top: 0;
+}
+
+/*
+ * Hide the browser's native radio.
+ *
+ * Keep it in the DOM so the control remains a real,
+ * accessible input.
+ */
+.radio-control input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------------------------------------------------------
+   Custom radio
+   --------------------------------------------------------- */
+.radio-button {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #7b8185;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+/*
+ * Selected radio.
+ *
+ * The inner circle is created using a pseudo-element.
+ */
+.radio-control input:checked + .radio-button::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #5d6266;
+}
+
+/* ---------------------------------------------------------
+   Keyboard focus
+   --------------------------------------------------------- */
+.radio-control:focus-within .radio-button {
+  border-color: #0076d7;
+  box-shadow: 0 0 0 1px #0076d7;
+}
+
+/*
+ * The disabled example uses a focusable wrapper so that
+ * the tooltip can still be displayed even though the
+ * actual input is disabled.
+ */
+.radio-control--disabled:focus .radio-button {
+  border-color: #0076d7;
+  box-shadow: 0 0 0 1px #0076d7;
+}
+
+/* ---------------------------------------------------------
+   Text
+   --------------------------------------------------------- */
+.radio-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding-top: 1px;
+}
+
+.radio-label {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #202122;
+}
+
+.radio-description {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  line-height: 1.55;
+  color: #494c4e;
+}
+
+/* ---------------------------------------------------------
+   Disabled state
+   --------------------------------------------------------- */
+.radio-option--disabled {
+  cursor: default;
+}
+
+.radio-option--disabled .radio-label {
+  color: #999999;
+}
+
+.radio-option--disabled .radio-button {
+  border-color: #7b8185;
+  background: #ffffff;
+}
+
+/*
+ * The screenshot shows the disabled radio's outline becoming
+ * blue while the label remains grey when the tooltip is active.
+ */
+.radio-control--disabled:hover .radio-button,
+.radio-control--disabled:focus .radio-button {
+  border-color: #0076d7;
+  box-shadow: 0 0 0 1px #0076d7;
+}
+
+/* ---------------------------------------------------------
+   Tooltip
+   --------------------------------------------------------- */
+.radio-tooltip {
+  position: absolute;
+  /*
+   * Position the tooltip above and slightly to the left
+   * of the radio button.
+   */
+  left: -17px;
+  bottom: calc(100% + 12px);
+  z-index: 100;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 300px;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  border-radius: 7px;
+  background: #202122;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.35;
+  white-space: nowrap;
+  /*
+   * Hidden by default.
+   */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(3px);
+  pointer-events: none;
+  transition: opacity 120ms ease, visibility 120ms ease, transform 120ms ease;
+}
+
+/*
+ * Tooltip arrow.
+ */
+.radio-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 29px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #202122;
+}
+
+/*
+ * Show tooltip when hovering or keyboard-focusing
+ * the disabled control.
+ */
+.radio-control--disabled:hover .radio-tooltip,
+.radio-control--disabled:focus .radio-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ---------------------------------------------------------
+   Responsive tooltip
+   --------------------------------------------------------- */
+@media (max-width: 500px) {
+  .radio-tooltip {
+    max-width: calc(100vw - 40px);
+    white-space: normal;
+  }
+}
+/*
+ * Bootstrap 3.4.1 tooltip overrides
+ *
+ * Keeps Bootstrap's positioning/animation behaviour but
+ * makes the tooltip visually match the UI shown in the screenshot.
+ */
+.tooltip {
+  z-index: 1070;
+  font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.35;
+  opacity: 0;
+}
+
+.tooltip.in {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  max-width: 300px;
+  padding: 10px 18px;
+  color: #fff;
+  text-align: center;
+  background-color: #202122;
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+/* Top */
+.tooltip.top .tooltip-arrow {
+  bottom: -5px;
+  margin-left: -6px;
+  border-width: 6px 6px 0;
+  border-top-color: #202122;
+}
+
+/* Bottom */
+.tooltip.bottom .tooltip-arrow {
+  top: -5px;
+  margin-left: -6px;
+  border-width: 0 6px 6px;
+  border-bottom-color: #202122;
+}
+
+/* Left */
+.tooltip.left .tooltip-arrow {
+  right: -5px;
+  margin-top: -6px;
+  border-width: 6px 0 6px 6px;
+  border-left-color: #202122;
+}
+
+/* Right */
+.tooltip.right .tooltip-arrow {
+  left: -5px;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+  border-right-color: #202122;
+}
+
+/*
+ * Application-wide jQuery UI tooltip
+ */
+.ui-tooltip {
+  position: absolute;
+  z-index: 9999;
+  max-width: 300px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 7px;
+  background: #202122;
+  color: #ffffff;
+  font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 0.7rem; /* 14px */
+  font-weight: 700;
+  line-height: 1.35;
+  box-shadow: none;
+  /* jQuery UI may inherit these from its theme */
+  text-align: left;
+}
+
+/*
+ * jQuery UI tooltip arrow
+ *
+ * jQuery UI doesn't provide the Bootstrap-style arrow,
+ * so create one with a pseudo-element.
+ */
+.ui-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  bottom: -7px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #202122;
+}
+
+/* ==========================================================================
+   D2L Button Overrides for Bootstrap 3
+   ========================================================================== */
+/* Base Button Styles */
+.d2l-btn {
+  /* Override Bootstrap 3 defaults */
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 0.9rem;
+  /* Sizing and Layout */
+  padding: 0 1.5rem;
+  border-end-end-radius: var(--d2l-button-end-end-radius, 0.3rem);
+  border-end-start-radius: var(--d2l-button-end-start-radius, 0.3rem);
+  border-start-end-radius: var(--d2l-button-start-end-radius, 0.3rem);
+  border-start-start-radius: var(--d2l-button-start-start-radius, 0.3rem);
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0px;
+  min-height: calc(2px + 2rem);
+  outline: none;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  touch-action: manipulation;
+  /* Remove Bootstrap 3 gradients and text shadows */
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+  /* Smooth transition */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Normal Button Styles */
+.d2l-btn-icon,
+.d2l-btn-normal {
+  color: #202122;
+  background-color: #e3e9f1;
+}
+
+.d2l-btn-icon {
+  margin: 0em 0.4em;
+  padding: 0 0.6rem;
+  background-color: var(--d2l-button-icon-background-color-default, transparent);
+  min-height: var(--d2l-button-icon-min-height, var(--d2l-button-icon-min-height-default));
+  min-width: var(--d2l-button-icon-min-width, var(--d2l-button-icon-min-width-default));
+  border-radius: var(--d2l-button-icon-border-radius, var(--d2l-button-icon-border-radius-default));
+}
+.d2l-btn-icon svg {
+  height: 0.9rem;
+  width: 0.9rem;
+}
+
+.d2l-btn-icon:hover,
+.d2l-btn-icon:focus,
+.d2l-btn-icon:active {
+  color: #202122;
+  background-color: var(--d2l-button-icon-background-color-hover-default, #cdd5dc);
+  text-decoration: none;
+  outline: none; /* Prevent Bootstrap's default focus outline */
+}
+
+.d2l-btn-small {
+  --d2l-button-icon-min-height-default: calc(1.6rem + 2px);
+  --d2l-button-icon-min-width-default: calc(1.6rem + 2px);
+  padding: 0;
+}
+.d2l-btn-small svg {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+/* Normal Button - Hover, Focus, Active */
+.d2l-btn-normal:not(:disabled):not(.disabled):not([disabled]):hover,
+.d2l-btn-normal:not(:disabled):not(.disabled):not([disabled]):focus,
+.d2l-btn-normal:not(:disabled):not(.disabled):not([disabled]):active {
+  color: #202122;
+  background-color: #cdd5dc;
+  text-decoration: none;
+  outline: none; /* Prevent Bootstrap's default focus outline */
+}
+
+/* Add a custom accessible focus ring for keyboard users */
+.d2l-btn-normal:not(:disabled):not(.disabled):not([disabled]):focus-visible {
+  outline: 2px solid #006fbf;
+  outline-offset: 2px;
+}
+
+/* Primary Button Styles */
+.d2l-btn-primary {
+  color: #ffffff;
+  background-color: #006fbf;
+}
+
+/* Primary Button - Hover, Focus, Active */
+.d2l-btn-primary:not(:disabled):not(.disabled):not([disabled]):hover,
+.d2l-btn-primary:not(:disabled):not(.disabled):not([disabled]):focus,
+.d2l-btn-primary:not(:disabled):not(.disabled):not([disabled]):active {
+  color: #ffffff;
+  background-color: #004489;
+  text-decoration: none;
+  outline: none;
+}
+
+.d2l-btn-primary:not(:disabled):not(.disabled):not([disabled]):focus-visible {
+  outline: 2px solid #202122;
+  outline-offset: 2px;
+}
+
+/* Disabled Button Styles (Overrides Bootstrap 3 specific disabled styling) */
+.d2l-btn:disabled,
+.d2l-btn.disabled,
+.d2l-btn[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5; /* Creates the faded effect shown in the image */
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* Ensure disabled buttons keep their original palette on hover, focus, and active */
+.d2l-btn:disabled:hover,
+.d2l-btn:disabled:focus,
+.d2l-btn:disabled:active,
+.d2l-btn.disabled:hover,
+.d2l-btn.disabled:focus,
+.d2l-btn.disabled:active,
+.d2l-btn[disabled]:hover,
+.d2l-btn[disabled]:focus,
+.d2l-btn[disabled]:active {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   2. Dropdown Styles
+   ========================================================================== */
+/* Wrapper to anchor the absolute dropdown */
+.d2l-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  /* Add margin to the top so the dropdown doesn't clip against the top of the viewport */
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+/* The Dropdown Box */
+.d2l-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px); /* 10px gap between button and dropdown */
+  left: 0;
+  z-index: 1000;
+  display: none; /* Hidden by default, JS will toggle this */
+  min-width: 320px; /* Matches the rough width in the image */
+  background-color: var(--d2l-popover-background-color, var(--d2l-popover-default-background-color));
+  border: 1px solid var(--d2l-popover-border-color, var(--d2l-popover-default-border-color));
+  border-radius: var(--d2l-popover-border-radius, var(--d2l-popover-default-border-radius));
+  box-shadow: var(--d2l-theme-shadow-floating-offset-x) var(--d2l-theme-shadow-floating-offset-y) var(--d2l-theme-shadow-floating-blur-radius) var(--d2l-theme-shadow-floating-spread-radius) var(--d2l-popover-shadow-color, var(--d2l-popover-default-shadow-color));
+  box-sizing: border-box;
+}
+
+/* The Little Arrow (Caret) */
+.d2l-dropdown-arrow {
+  position: absolute;
+  top: -8px;
+  left: 24px; /* Aligns under the "O" in "Open it!" */
+  width: 16px;
+  height: 16px;
+  background-color: var(--d2l-popover-background-color, var(--d2l-popover-default-background-color));
+  border-radius: 0.1rem;
+  outline: var(--d2l-popover-outline-width, 0) solid var(--d2l-popover-outline-color, transparent);
+  transform: rotate(45deg);
+  border-top: 1px solid var(--d2l-popover-border-color, var(--d2l-popover-default-border-color));
+  border-left: 1px solid var(--d2l-popover-border-color, var(--d2l-popover-default-border-color));
+}
+
+/* Content Padding */
+.d2l-dropdown-content {
+  padding: 20px;
+}
+
+/* Links */
+.d2l-dropdown-link {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #006fbf;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.d2l-dropdown-link:hover,
+.d2l-dropdown-link:focus {
+  color: #004489;
+  text-decoration: underline;
+}
+
+/* Paragraph Text */
+.d2l-dropdown-text {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 16px 0;
+}
+
+/* Utility class to show the dropdown */
+.d2l-dropdown-menu.is-open {
+  display: block;
+}
+
+/* ==========================================================================
+   Datepicker Styles
+   ========================================================================== */
+/* Wrapper */
+.d2l-datepicker-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Datepicker Specific Menu Width */
+.d2l-datepicker-menu {
+  width: 340px;
+  padding: 16px;
+  padding-bottom: 6px;
+}
+
+/* Header */
+.d2l-datepicker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.d2l-month-year {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #202122;
+}
+
+.d2l-nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #202122;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.d2l-nav-btn:hover {
+  background-color: #e3e9f1;
+}
+
+/* Calendar Grid */
+.d2l-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.d2l-dow {
+  text-align: center;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #666666;
+  padding-bottom: 8px;
+}
+
+.d2l-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(2rem - 6px);
+  border-radius: 0.3rem;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--d2l-theme-text-color-static-standard);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.d2l-day.today {
+  font-size: 1rem;
+}
+
+.d2l-day:hover {
+  background-color: var(--d2l-theme-background-color-interactive-tertiary-hover);
+}
+
+.d2l-day.selected {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--d2l-theme-background-color-interactive-highlighted);
+  outline: 1px solid var(--d2l-theme-border-color-focus);
+}
+
+.d2l-day.muted {
+  color: #999999;
+}
+
+.d2l-day.empty {
+  cursor: default;
+}
+
+.d2l-day.empty:hover {
+  background-color: transparent;
+}
+
+/* Footer */
+.d2l-datepicker-footer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 6px;
+  border-top: 1px solid #eeeeee;
+}
+
+.d2l-footer-btn {
+  background: none;
+  border: none;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 0.9rem;
+  color: var(--d2l-theme-text-color-interactive-default);
+  cursor: pointer;
+  padding: 0 0.6rem;
+}
+
+.d2l-btn.d2l-footer-btn:hover {
+  color: var(--d2l-theme-text-color-interactive-default) !important;
+  background-color: var(--d2l-theme-background-color-interactive-tertiary-hover) !important;
+}
+
+/* ==========================================================================
+   Modal Backdrop Override
+   ========================================================================== */
+/* Change the background color to white */
+.modal-backdrop {
+  background-color: #ffffff;
+}
+
+/* Adjust opacity (Default is 0.5) */
+.modal-backdrop.in {
+  opacity: 0.8; /* 1.0 would be completely solid white, hiding the page entirely */
+}
+
+/* ==========================================================================
+   Bootstrap 3 Modal Overrides
+   ========================================================================== */
+/* 1. The Modal Box Itself */
+.modal-content {
+  background-color: #ffffff;
+  border: 1px solid var(--d2l-color-mica);
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 12px rgba(86, 90, 92, 0.25);
+  box-sizing: border-box;
+  height: 100% !important;
+}
+
+/* 2. Header Area */
+.modal-header {
+  padding: 24px 24px 16px 24px;
+  border-bottom: none; /* Removes the default horizontal line */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+}
+
+.modal-title {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #202122;
+  line-height: 1.2;
+  flex: 1 0 0;
+}
+
+/* 3. Close Button ('X') */
+.modal-header .close {
+  float: none; /* Removes Bootstrap 3's default float */
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #666666;
+  opacity: 0.7;
+  text-shadow: none; /* Removes Bootstrap's default text shadow */
+  line-height: 1;
+  transition: opacity 0.2s ease;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+  color: #000000;
+  opacity: 1;
+  outline: none;
+}
+
+/* 4. Body Area */
+.modal-body {
+  padding: 0 24px 24px 24px;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #202122;
+  background-color: transparent;
+}
+
+/* 5. Footer Area */
+.modal-footer {
+  padding: 0 24px 24px 24px;
+  border-top: none; /* Removes the default horizontal line */
+  text-align: left; /* Aligns the OK button to the left, as seen in the image */
+  background-color: transparent;
+}
+
+/* Optional: Reset Bootstrap 3's default button margins in the footer */
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 8px; /* Only applies if you have multiple buttons */
+}/*# sourceMappingURL=app.css.map */
