@@ -717,9 +717,9 @@ section {
   margin-bottom: 4px;
   cursor: pointer;
 }
-
-.radio-option:last-child {
-  margin-bottom: 0;
+.radio-option:focus .radio-button, .radio-option:hover .radio-button {
+  border-color: #0076d7;
+  box-shadow: 0 0 0 1px #0076d7;
 }
 
 /* ---------------------------------------------------------
@@ -727,11 +727,11 @@ section {
    --------------------------------------------------------- */
 .radio-control {
   position: relative;
-  flex: 0 0 30px;
-  width: 30px;
-  height: 30px;
+  flex: 0 0 20px;
+  width: 22px;
+  height: 22px;
   margin-right: 12px;
-  margin-top: 0;
+  margin-top: 3px;
 }
 
 /*
@@ -759,8 +759,8 @@ section {
   position: absolute;
   inset: 0;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   box-sizing: border-box;
   border: 1px solid #7b8185;
   border-radius: 50%;
@@ -798,9 +798,9 @@ section {
  * the tooltip can still be displayed even though the
  * actual input is disabled.
  */
-.radio-control--disabled:focus .radio-button {
-  border-color: #0076d7;
-  box-shadow: 0 0 0 1px #0076d7;
+.radio-control--disabled:hover .radio-button, .radio-control--disabled:hover .radio-button {
+  border-color: #7b8185;
+  box-shadow: 0 0 0 0px #7b8185;
 }
 
 /* ---------------------------------------------------------
@@ -814,16 +814,18 @@ section {
 }
 
 .radio-label {
-  font-size: 0.8rem;
-  line-height: 1.45;
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.2rem;
   color: #202122;
 }
 
 .radio-description {
   margin-top: 2px;
-  font-size: 0.7rem;
-  line-height: 1.55;
-  color: #494c4e;
+  font-size: 0.66rem;
+  font-weight: 400;
+  line-height: 0.9rem;
+  color: var(--d2l-theme-text-color-static-subtle);
 }
 
 /* ---------------------------------------------------------
